@@ -59,7 +59,7 @@ public class Challenge1 {
         if(fullName.contains(", ")) {
             return fullName.split(", ")[LAST_NAME_WITH_COMMA_IDX];
         }else if(fullName.contains(" ")) {
-            return (fullName.split(" ").length == 2? fullName.split(" ")[LAST_NAME_IDX] : fullName.split(" ")[LAST_NAME_IDX+1]);
+            return (fullName.split(" ").length == 2? fullName.split(" ")[LAST_NAME_IDX] : fullName.split(" ")[LAST_NAME_WITH_MIDDLE_IDX]);
         } else{
             throw new IllegalArgumentException("Name must contain a space or comma.");
         }
